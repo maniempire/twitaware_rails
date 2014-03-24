@@ -38,72 +38,40 @@
 <table border="0" cellpadding="0" height="400"  cellspacing="0" width="600" align="center" >
 <tr>
 <td valign="top" align="left">
-<%= form_tag("/home/search_tag", {:method => :post, :id => 'search_hash_tag'}) do %>
+
 
 <table border="0" cellpadding="0" height="150"  cellspacing="0" width="300" align="left" >
 <tr>
 <td height="35" class="text-headline">
-Search your tag here:
+Tweet Based on Regions:
 </td>
 </tr>
 
 <tr>
 <td height="60">
-	&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="2" name="search_key_word"></textarea>
+	
 </td>
 </tr>
 
 <tr>
 <td height="30">
-	&nbsp;&nbsp;&nbsp;&nbsp;<input name="submit" type="submit" class="login-but" value="Search" />
+	&nbsp;&nbsp;&nbsp;&nbsp;
 </td>
 </tr>
 
 </table>
-<% end %>
+
 </td>
 <td valign="top">
 
-	<table border="0" cellpadding="0" height="150"  cellspacing="0" width="150" align="left" >
-	<tr>
-	<td height="35" class="text-headline">
-	Tag Clouds:
-	</td>
-	</tr>
-
-	<tr>
-	<td height="60">
-		<a href="/home/index?search_tag=flood">flood</a>&nbsp;&nbsp;<a href="/home/index?search_tag=earthquake">earthquake</a>
-		<a href="/home/index?search_tag=landslide">landslide</a>&nbsp;&nbsp;<a href="/home/index?search_tag=cyclone">cyclone</a>
-		<a href="/home/index?search_tag=accident">accident</a>&nbsp;&nbsp;<a href="/home/index?search_tag=wildfire">wildfire</a>
-	</td>
-	</tr>
-
-	<tr>
-	<td height="30">
-		&nbsp;&nbsp;&nbsp;&nbsp;
-	</td>
-	</tr>
-
-	</table> 
+	
 
 </td>
 
 </tr>
 <tr>
 <td colspan="2">
-	<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
-	<tr bgcolor="#F0F8FF">
-	<td class="text-headline" height="30" valign="top">
-	Stream of Tweets based on customized keywords: <strong><span style="color:red;"><%= params[:search_tag] %></span></strong>
-	</td>
-	</tr>
-
-	<% @search_results.each do |t| %>
-	<tr><td><%= auto_link(t.text) %></td></tr>
-	<% end %>
-
-	</table>
+	
 </td>
 
 </tr>

@@ -3,6 +3,8 @@ TwitawareRails::Application.routes.draw do
   
   get "login/index"
   get "home/index"
+  get "home/tweet_classification"
+  get "home/tweet_based_on_regions"
   get "post/index"
   get '/auth/:provider/callback' => 'post#twitter_login'
   

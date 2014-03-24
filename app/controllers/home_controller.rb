@@ -11,6 +11,14 @@ class HomeController < ApplicationController
     
   end
   
+  def tweet_classification
+    
+  end
+  
+  def tweet_based_on_regions
+    
+  end
+  
   
   def search_tag
     

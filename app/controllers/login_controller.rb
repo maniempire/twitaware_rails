@@ -7,7 +7,7 @@ class LoginController < ApplicationController
     
     puts "In validate user"
     
-    redirect_to "/home/index?search_tag=earthquake"
+    redirect_to "/home/index?search_tag=flood"
     
   end
   
