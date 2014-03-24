@@ -23,7 +23,7 @@ class HomeController < ApplicationController
   
   def search_results(key_word)
     
-     @search_results = Twitter.search(key_word).results 
+     @search_results = Twitter.search("#{key_word} -filter:retweets").results 
     
   end  
   
