@@ -1,0 +1,19 @@
+<h1>General Timeline</h1>
+
+<% @general_tweets.each do |t| %>
+<li><%= auto_link(t.text) %></li>
+<% end %>
+
+
+<h1>Maniempire's Timeline</h1>
+
+
+<% @tweets.each do |t| %>
+<li><%= auto_link(t.text) %></li>
+<% end %>
+
+<p>
+
+<a href="/auth/twitter">Login Via Twitter</a>
+
+</p>

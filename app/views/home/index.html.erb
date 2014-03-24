@@ -1,0 +1,219 @@
+
+
+<table width="1004" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+	<table border="1" height="123" width="100%" cellpadding="0" cellspacing="0" background="/assets/twitaware_header.jpg">
+	<tr><td width="75%">
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td>
+
+	<table width="1004" border="0" cellspacing="0" cellpadding="0">
+	      <tr>
+	        <td  class="header-title-text" width="700"></td>
+	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;|&nbsp;<span id="time"></span>&nbsp;</td>
+	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">|&nbsp;Logout</a></td>
+
+	      </tr>
+	    </table>
+
+
+</td>
+
+
+</tr>
+
+<tr>
+<td>
+<table border="0">
+<tr>
+<td height="500" width="700" valign="top">
+
+
+<table border="0" cellpadding="0" height="400"  cellspacing="0" width="600" align="center" >
+<tr>
+<td valign="top">
+<%= form_tag("/home/search_tag", {:method => :post, :id => 'search_hash_tag'}) do %>
+
+<table border="0" cellpadding="0" height="200"  cellspacing="0" width="300" align="center" >
+<tr>
+<td height="35" class="text-headline">
+Customize your tag here:
+</td>
+</tr>
+
+<tr>
+<td height="60">
+	&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="2" name="search_key_word"></textarea>
+</td>
+</tr>
+<tr>
+<td height="30" class="body-text">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+  		<!-- <input type="checkbox" name="shareFacebook"></input>Facebook  -->
+    
+		<!-- <input type="checkbox" name="shareTwitter"></input>Twitter -->
+		
+		<!-- <input type="checkbox" name="shareLinkedIn"></input>LinkedIn -->
+</td>
+</tr>
+<tr>
+<td height="30">
+	&nbsp;&nbsp;&nbsp;&nbsp;<input name="submit" type="submit" class="login-but" value="Search" />
+</td>
+</tr>
+
+</table>
+<% end %>
+</td>
+<td valign="top">
+
+<table border="1" cellpadding="3" height="200"  cellspacing="3" width="300" align="center" >
+<tr>
+<td class="text-headline" height="35" valign="top">
+Stream of Tweets based on customized keywords: <%= params[:search_tag] %>
+</td>
+</tr>
+
+<% @search_results.each do |t| %>
+<tr><td><%= auto_link(t.text) %></td></tr>
+<% end %>
+
+</table>
+ 
+
+</td>
+
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+
+</td>
+<td width="304" valign="top" bgcolor="#F0F8FF">
+<table border="0" width="300" align="center" cellpadding="2" bordercolor="#5eb8ff" cellspacing="2" height="400">
+<tr>
+<td height="150" valign="top" >
+<table border="0" bgcolor="" width="200" align="center">
+
+<tr>
+<td colspan="3">
+
+&nbsp;
+</td>
+</tr>
+<tr>
+<td width="50">
+&nbsp;
+</td>
+<td>
+<img src="/assets/default-human.jpg" width="100" height="100" />
+</td>
+<td  width="50">
+&nbsp;
+</td>
+
+</tr>
+<tr>
+<td colspan="3" align="center" class="body-text">
+Logged in as User
+
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td height="150" valign="top" >
+<table border="0" bgcolor="" width="200" align="center">
+
+<tr>
+<td>
+&nbsp;
+</td>
+<td align="center" height="60" class="marque-headline">
+Hot Links
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td  height="35">
+<a href="postComplaintsAction.do?link_url=complaint">Connect Like Minded People</a>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td height="35">
+<a href="debateAction.do?link_url=debate" >Tweets based on Regions</a>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+
+
+</tr>
+
+<tr>
+    	<td class="hd-br">
+    		
+			<table border="0" width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+			<td style="color:#FFFFFF; text-decoration:none" align="center">
+			&copy; 2014 All Rights Reserved
+			</td>
+			</tr>
+			</table>
+    	</td>
+  	</tr>
+</table>
+
+
+
+
+
