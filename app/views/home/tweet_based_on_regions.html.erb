@@ -40,24 +40,16 @@
 <td valign="top" align="left">
 
 
-<table border="0" cellpadding="0" height="150"  cellspacing="0" width="300" align="left" >
+<table border="0" cellpadding="0" height="50"  cellspacing="0" width="300" align="left" >
 <tr>
 <td height="35" class="text-headline">
 Tweet Based on Regions:
 </td>
 </tr>
 
-<tr>
-<td height="60">
-	
-</td>
-</tr>
 
-<tr>
-<td height="30">
-	&nbsp;&nbsp;&nbsp;&nbsp;
-</td>
-</tr>
+
+
 
 </table>
 
@@ -69,12 +61,82 @@ Tweet Based on Regions:
 </td>
 
 </tr>
+
+
 <tr>
-<td colspan="2">
-	
-</td>
+	<td colspan="2">
+		<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
+		<tr bgcolor="#F0F8FF">
+		<td class="text-headline" height="30" valign="top">
+		Stream of Tweets based on Regions: <strong><span style="color:red;">New York, Sandy Hurricane<%#= params[:search_tag] %>
+			</span></strong>
+		</td>
+		</tr>
+
+		<% @newyork_sandy_results.each do |t| %>
+		<tr><td><%= auto_link(t.text) %></td></tr>
+		<% end %>
+
+		</table>
+	</td>
 
 </tr>
+<tr>
+	<td colspan="2">
+		<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
+		<tr bgcolor="#F0F8FF">
+		<td class="text-headline" height="30" valign="top">
+		Stream of Tweets based on Regions: <strong><span style="color:red;">India, Polio<%#= params[:search_tag] %>
+			</span></strong>
+		</td>
+		</tr>
+
+		<% @india_polio_results.each do |t| %>
+		<tr><td><%= auto_link(t.text) %></td></tr>
+		<% end %>
+
+		</table>
+	</td>
+
+</tr>
+<tr>
+	<td colspan="2">
+		<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
+		<tr bgcolor="#F0F8FF">
+		<td class="text-headline" height="30" valign="top">
+		Stream of Tweets based on Regions: <strong><span style="color:red;">United Kingdom, Malaria<%#= params[:search_tag] %>
+			</span></strong>
+		</td>
+		</tr>
+
+		<% @uk_malaria_results.each do |t| %>
+		<tr><td><%= auto_link(t.text) %></td></tr>
+		<% end %>
+
+		</table>
+	</td>
+
+</tr>
+
+<tr>
+	<td colspan="2">
+		<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
+		<tr bgcolor="#F0F8FF">
+		<td class="text-headline" height="30" valign="top">
+		Stream of Tweets based on Regions: <strong><span style="color:red;">Japan, Earthquake<%#= params[:search_tag] %>
+			</span></strong>
+		</td>
+		</tr>
+
+		<% @japan_earthquake_results.each do |t| %>
+		<tr><td><%= auto_link(t.text) %></td></tr>
+		<% end %>
+
+		</table>
+	</td>
+
+</tr>
+
 <tr>
 <td colspan="2" height="20">
 	&nbsp;

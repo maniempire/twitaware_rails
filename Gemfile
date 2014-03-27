@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'omniauth-twitter' 
 gem 'twitter'
 gem 'rails_autolink'
+#gem 'twitter-text'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
