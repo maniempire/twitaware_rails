@@ -17,7 +17,7 @@
 	      <tr>
 	        <td  class="header-title-text" width="700"></td>
 	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;|&nbsp;<span id="time"></span>&nbsp;</td>
-	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">|&nbsp;Logout</a></td>
+	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">&nbsp;Logout</a></td>
 
 	      </tr>
 	    </table>
@@ -72,10 +72,8 @@ Tweet Based on Regions:
 			</span></strong>
 		</td>
 		</tr>
-
-		<% @newyork_sandy_results.each do |t| %>
-		<tr><td><%= auto_link(t.text) %></td></tr>
-		<% end %>
+<%= tweet_display(@newyork_sandy_results) %>
+	
 
 		</table>
 	</td>
@@ -90,10 +88,8 @@ Tweet Based on Regions:
 			</span></strong>
 		</td>
 		</tr>
-
-		<% @india_polio_results.each do |t| %>
-		<tr><td><%= auto_link(t.text) %></td></tr>
-		<% end %>
+<%= tweet_display(@india_polio_results) %>
+	
 
 		</table>
 	</td>
@@ -108,11 +104,8 @@ Tweet Based on Regions:
 			</span></strong>
 		</td>
 		</tr>
-
-		<% @uk_malaria_results.each do |t| %>
-		<tr><td><%= auto_link(t.text) %></td></tr>
-		<% end %>
-
+<%= tweet_display(@uk_malaria_results) %>
+		
 		</table>
 	</td>
 
@@ -127,10 +120,8 @@ Tweet Based on Regions:
 			</span></strong>
 		</td>
 		</tr>
-
-		<% @japan_earthquake_results.each do |t| %>
-		<tr><td><%= auto_link(t.text) %></td></tr>
-		<% end %>
+<%= tweet_display(@japan_earthquake_results) %>
+		
 
 		</table>
 	</td>
@@ -205,7 +196,7 @@ Hot Links
 &nbsp;
 </td>
 <td  height="35">
-<a href="/home/index?search_tag=flood">Tweets Cloud</a>
+<a href="/home/index?search_tag=wildfires">Tweets Cloud</a>
 </td>
 <td>
 &nbsp;

@@ -16,8 +16,8 @@
 	<table width="1004" border="0" cellspacing="0" cellpadding="0">
 	      <tr>
 	        <td  class="header-title-text" width="700"></td>
-	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;|&nbsp;<span id="time"></span>&nbsp;</td>
-	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">|&nbsp;Logout</a></td>
+	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;&nbsp;<span id="time"></span>&nbsp;</td>
+	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">&nbsp;Logout</a></td>
 
 	      </tr>
 	    </table>
@@ -40,24 +40,17 @@
 <td valign="top" align="left">
 
 
-<table border="0" cellpadding="0" height="150"  cellspacing="0" width="300" align="left" >
+<table border="0" cellpadding="0" height="50"  cellspacing="0" width="300" align="left" >
 <tr>
 <td height="35" class="text-headline">
-Tweet Classifications:
+Tweet Based on classifications: <a href="/home/tweet_classification?tweet_filter_for=flood">flood</a>&nbsp;&nbsp;<a href="/home/tweet_classification?tweet_filter_for=accident">accident</a>&nbsp;&nbsp;<a href="/home/tweet_classification?tweet_filter_for=wildfires">wildfires</a>
+
 </td>
 </tr>
 
-<tr>
-<td height="60">
-	
-</td>
-</tr>
 
-<tr>
-<td height="30">
-	&nbsp;&nbsp;&nbsp;&nbsp;
-</td>
-</tr>
+
+
 
 </table>
 
@@ -69,12 +62,26 @@ Tweet Classifications:
 </td>
 
 </tr>
+
+
 <tr>
-<td colspan="2">
+	<td colspan="2" valign="top">
+		<table border="1" cellpadding="3" height="200"  cellspacing="3" width="100%" align="center" >
+		<tr bgcolor="#F0F8FF">
+		<td class="text-headline" height="30" valign="top">
+		Filtered Stream of Tweets: <strong><span style="color:red;"><%= params[:tweet_filter_for] %>
+			</span></strong>
+		</td>
+		</tr>
+<%= tweet_display(@filtered_tweets) %>
 	
-</td>
+
+		</table>
+	</td>
 
 </tr>
+
+
 <tr>
 <td colspan="2" height="20">
 	&nbsp;
@@ -143,7 +150,7 @@ Hot Links
 &nbsp;
 </td>
 <td  height="35">
-<a href="/home/index?search_tag=flood">Tweets Cloud</a>
+<a href="/home/index?search_tag=wildfires">Tweets Cloud</a>
 </td>
 <td>
 &nbsp;

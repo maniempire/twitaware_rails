@@ -16,7 +16,7 @@
 	<table width="1004" border="0" cellspacing="0" cellpadding="0">
 	      <tr>
 	        <td  class="header-title-text" width="700"></td>
-	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;|&nbsp;<span id="time"></span>&nbsp;</td>
+	        <td class="header-title-text" align="right"><span id="date"></span>&nbsp;&nbsp;<span id="time"></span>&nbsp;</td>
 	        <td class="header-title-text" width="30"><a href="/" style="text-decoration: none;" class="link">|&nbsp;Logout</a></td>
 
 	      </tr>
@@ -99,10 +99,8 @@ Search your tag here:
 	</td>
 	</tr>
 
-	<% @search_results.each do |t| %>
-	<tr><td><%= auto_link(t.text) %></td></tr>
-	<% end %>
-
+	<%= tweet_display(@search_results) %>
+	
 	</table>
 </td>
 
@@ -175,7 +173,7 @@ Hot Links
 &nbsp;
 </td>
 <td  height="35">
-<a href="/home/index?search_tag=flood">Tweets Cloud</a>
+<a href="/home/index?search_tag=wildfires">Tweets Cloud</a>
 </td>
 <td>
 &nbsp;
