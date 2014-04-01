@@ -331,3 +331,40 @@ color:#FFFFFF;
 
 line-height:20px;
 }
+
+.alert-alert-notice {
+
+
+	border:1px solid #779426;
+	height:25px;
+	line-height:25px;
+	background:#f7ffe3;
+	color:#000;
+	width:800px;
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	vertical-align:middle;
+	padding:3px 10px;
+	margin: 0 auto;
+	z-index:100;
+
+}
+
+.alert-alert-error {
+
+	border:1px solid #e30004;
+	height:25px;
+	line-height:25px;
+	background:#ffb7af;
+	color:#000;
+	width:800px;
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	vertical-align:middle;
+	padding:3px 10px;
+	margin: 0 auto;
+}

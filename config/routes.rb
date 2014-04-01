@@ -1,6 +1,18 @@
 TwitawareRails::Application.routes.draw do
   
   
+  get "registrations/new"
+  get "registrations/create"
+  get "sessions/new"
+  
+  
+  devise_for :users, :controllers => {:sessions => "sessions", :registrations => "registrations"}
+  
+  devise_scope :user do
+    get "/users/sign_in" => "sessions#new", :as => "new"
+    get "/users/sign_up" => "registrations#new", :as => "new_registration"
+    get "/users/sign_out" => "sessions#destroy", :as => "logout_user_session"
+    end 
   get "login/index"
   get "home/index"
   get "home/tweet_classification"

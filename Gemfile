@@ -11,6 +11,8 @@ gem 'twitter'
 gem 'rails_autolink'
 #gem 'twitter-text'
 
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
